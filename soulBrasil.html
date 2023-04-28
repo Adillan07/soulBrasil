@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Soul Brasil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link  rel="stylesheet" href="estilo.css"/>
+	<meta charset="UTF-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="body">	
+	<header>
+		<figure class="logo">
+			<img width="100" src="SOULBRASIL.png"/>	
+		</figure>
+		<nav>
+			<img style="width: 50px; cursor: pointer;" src="menu.png">
+			<a href=""><span>Home</span></a>
+			<a href=""><span>Sobre</span></a>
+			<a href=""><span style="color: #888">Cadastro</span></a>
+		</nav>
+	</header>
+	<main>
+		<div class="cabecalho">
+			<h1>Formulário de contratação</h1>
+			<p>Preencha caso esteja interessado em enviar seu currículo:</p>
+		</div><!--cabecalho-->
+		<form>
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				<div class="1">
+					<label>Nome</label><br/>
+					<input type="text" placeholder="Nome Sobrenome" name="campoNome" required/><br/>
+					<label>RG</label><br/>
+					<input type="text" placeholder="000.000.000-0" name="campoRG" maxlength="10" size="13" required/><br/>
+				</div><!--1-->
+				<div class="2">
+					<label>CPF</label><br/>
+					<input type="text" placeholder="000.000.000-00" name="campoCPF" maxlength="11" size="13" required/><br/>
+					<label>Data de nascimento</label><br/>
+					<input type="date" placeholder="00/00/0000" name="campoDN" required/> <br/>
+				</div><!--2-->
+				<div style="margin-right: 0;" class="3">
+					<label>Sexo</label><br/>
+					<input type="radio" name="campoSexo" required/>
+					<label>Masculino</label><br>
+					<input type="radio" name="campoSexo" required/>
+					<label>Feminino</label>
+				</div><!--3-->
+			</fieldset>
+			<fieldset>
+				<legend>Dados de contato</legend>
+				<div class="4">
+					<label>Telefone</label><br />
+					<input type="text" placeholder="(00) 00000-0000" name="campoTelefone" maxlength="16" size="16" required/><br />
+					<label>Email</label><br>
+					<input type="email" placeholder="usuario@email.com" name="campoEmail" required/>
+				</div><!--4-->
+				<div class="5">
+					<label>Endereço</label><br/>
+					<input type="text" placeholder="Bairro" name="campoEndereço" required/>
+					<input type="text" placeholder="Cidade" name="campoEndereço" required/>
+					<select placeholder="UF" required name="campoEndereço" size="1">
+						<option></option>
+						<option value="SP">SP</option>
+						<option value="RJ">RJ</option>
+						<option value="AM">AM</option>
+						<option value="PB">PB</option>
+						<option value="SC">SC</option>
+						<option value="ES">ES</option>
+						<option value="MG">MG</option>
+						<option value="RS">RS</option>
+						<option value="MT">MT</option>
+						<option value="PE">PE</option>
+					</select><br/>
+					<label>CEP</label><br>
+					<input type="text" placeholder="00000-000" name="campoCEP" maxlength="9" size="9" required/><br>
+				</div><!--5-->
+			</fieldset>
+			<fieldset>
+				<legend>Dados profissionais</legend>
+				<div class="6">
+					<label>Escola de formação</label><br>
+					<input type="text" name="campoFormacao" placeholder="Nome da escola" required/><br>
+					<label>Principais habilidades</label><br/>
+					<textarea style="resize: none;" cols="40" rows="5" name="campoHabilidades" required></textarea>
+				</div><!--6-->
+				<div class="sete">
+					<label>Áreas de atuação</label><br/>
+					<input type="checkbox" name="campoArea"/>
+					<label>Dança</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Teatro</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Música</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Pintura</label><br>
+					<input type="checkbox" name="campoArea"/>
+					<label>Circense</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Cinema</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Escultura</label>
+					<input type="checkbox" name="campoArea"/>
+					<label>Literatura</label><br />
+				</div><!--7-->
+			</fieldset>
+			<input type="submit" value="Enviar" />
+		</form>
+	</main>
+	<footer>
+		<div>
+			<figure class="minilogo"><img width="75" src="SOULBRASIL.png"></figure>
+			<p>&copy; Todos os direitos reservados.</p>
+		</div>
+	</footer>
+</div><!--body-->	
+</body>
+</html>
